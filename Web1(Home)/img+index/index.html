@@ -57,6 +57,35 @@
             font-weight: bold;
         }
         
+        #right {
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+        }
+
+        .input {
+            border-radius: 50px;
+            background-color: white;
+            border: none;
+            width: 170px;
+            height: 35px;
+            color: rgb(150, 150, 150);
+            font-size: 15px;
+            padding-left: 50px;
+            box-shadow: 3px 3px 0px 0px gainsboro;
+        }
+
+        .search_img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -200px;
+        }
+
+        .cart_img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 220px;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +102,11 @@
                 <li><a href="#">Reserve</a></li>
                 <li><a href="#">Delivery</a></li>
             </div>
-            
+            <div id="right">
+                <input class="input" type="text" placeholder="Search">
+                <img src="Search.png" alt="" class="search_img">
+                <img class="cart_img" src="Cart.png" alt="">
+            </div>
         </div>
     </div>
 </body>
