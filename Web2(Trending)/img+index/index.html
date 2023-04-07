@@ -8,7 +8,7 @@
     <title>Trending</title>
     <style>
         #wrapper {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat';
         }
 
         #header {
@@ -32,7 +32,7 @@
             font-size: 20px;
         }
 
-        #center{
+        #center {
             display: flex;
             margin-left: 100px;
             justify-content: space-between;
@@ -76,16 +76,83 @@
             box-shadow: 3px 3px 0px 0px gainsboro;
         }
 
-        .search_img{
+        .search_img {
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -200px;
         }
 
-        .cart_img{
+        .cart_img {
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: 220px;
+        }
+
+        #center2 {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #container_first {
+            display: flex;
+            width: 1440px;
+            height: 700px;
+            background-color: #FFF9F4;
+            border-radius: 10px;
+        }
+
+        #left_container1 {
+            margin-left: 50px;
+        }
+
+        .title {
+            margin-top: 70px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .d39 {
+            font-weight: bold;
+            font-size: 33px;
+            line-height: 100%;
+            margin-left: 40px;
+            color: #3A8869;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            background: #FFFFFF;
+            border-radius: 50%;
+            margin-right: 70px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .box_qt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            width: 43px;
+            height: 37px;
+            border: none;
+            background: #AAAAAA;
+            border-radius: 10px;
+        }
+
+        #addtocard {
+            width: 160px;
+            height: 45px;
+            margin-left: 60px;
+            background: #3A8869;
+            box-shadow: 0px 3px 3px #5CA3A8;
+            border-radius: 15px;
+            border: none;
+            color: white;
         }
     </style>
 </head>
@@ -108,6 +175,46 @@
                 <input class="input" type="text" placeholder="Search">
                 <img src="Search.png" alt="" class="search_img">
                 <img class="cart_img" src="Cart.png" alt="">
+            </div>
+        </div>
+        <div id="center2">
+            <div id="container_first">
+                <div id="left_container1">
+                    <div class="title">Caramel Frappuccino</div>
+                    <div style="display: flex; align-items: center; margin-top: 30px;">
+                        <img src="Rating.png" alt="" width="17%">
+                        <div class="d39">$ 39.00</div>
+                    </div>
+                    <div style="margin-top: 20px;margin-bottom: 40px; line-height: 30px;">
+                        Caramel Frappuccino meets coffee, milk and ice for a rendezvous in<br>
+                        the blender, while whipped cream and buttery caramel sauce<br>
+                        layer the love on top. To change things up, try it affogato-style<br>
+                        with a hot espresso shot poured right over the top.
+                    </div>
+                    <div style="font-size: 18px;"><b>Serve with</b></div>
+                    <div style="display: flex; margin-top: 20px; margin-left: 20px;">
+                        <div class="circle">
+                            <img src="cookies.png" alt="">
+                        </div>
+                        <div class="circle">
+                            <img src="cups.png" alt="">
+                        </div>
+                        <div class="circle">
+                            <img src="donut.png" alt="">
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-top: 20px; margin-left: 15px;">
+                        <div>COOKIES</div>
+                        <div style="margin-left: 65px; margin-right: 70px;">YOGURT</div>
+                        <div>DONUT</div>
+                    </div>
+                    <div style="display: flex; margin-top: 30px; align-items: center;">
+                        <button class="box_qt">-</button>
+                        <div style="font-size: 20px; margin-left: 20px;">2</div>
+                        <button class="box_qt">+</button>
+                        <button id="addtocard">ADD TO CARD</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
