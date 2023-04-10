@@ -88,7 +88,9 @@
             margin-left: 220px;
         }
 
-        #center2 {
+        #center2 {}
+
+        #container1 {
             margin-top: 40px;
             display: flex;
             justify-content: center;
@@ -188,10 +190,26 @@
             margin-left: -80px;
         }
 
-        .hide{
+        .hide {
             margin-top: -500px;
             margin-left: -477px;
             height: 700px;
+        }
+
+        #container_second {
+            margin-top: 120px;
+            margin-left: 120px;
+            display: flex;
+            height: 700px;
+
+        }
+
+        #p1 {
+            width: 295px;
+            height: 450px;
+            background: #EAE9E5;
+            border-radius: 20px;
+            margin-right: 25px;
         }
     </style>
 </head>
@@ -217,76 +235,132 @@
             </div>
         </div>
         <div id="center2">
-            <div id="container_first">
-                <div id="left_container1">
-                    <div class="title">Caramel Frappuccino</div>
-                    <div style="display: flex; align-items: center; margin-top: 30px;">
-                        <img src="Rating.png" alt="" width="17%">
-                        <div class="d39">$ 39.00</div>
-                    </div>
-                    <div style="margin-top: 20px;margin-bottom: 40px; line-height: 30px;">
-                        Caramel Frappuccino meets coffee, milk and ice for a rendezvous in<br>
-                        the blender, while whipped cream and buttery caramel sauce<br>
-                        layer the love on top. To change things up, try it affogato-style<br>
-                        with a hot espresso shot poured right over the top.
-                    </div>
-                    <div style="font-size: 18px;"><b>Serve with</b></div>
-                    <div style="display: flex; margin-top: 20px; margin-left: 20px;">
-                        <div class="circle">
-                            <img src="cookies.png" alt="">
+            <div id="container1">
+                <div id="container_first">
+                    <div id="left_container1">
+                        <div class="title">Caramel Frappuccino</div>
+                        <div style="display: flex; align-items: center; margin-top: 30px;">
+                            <img src="Rating.png" alt="" width="17%">
+                            <div class="d39">$ 39.00</div>
                         </div>
-                        <div class="circle">
-                            <img src="cups.png" alt="">
+                        <div style="margin-top: 20px;margin-bottom: 40px; line-height: 30px;">
+                            Caramel Frappuccino meets coffee, milk and ice for a rendezvous in<br>
+                            the blender, while whipped cream and buttery caramel sauce<br>
+                            layer the love on top. To change things up, try it affogato-style<br>
+                            with a hot espresso shot poured right over the top.
                         </div>
-                        <div class="circle">
-                            <img src="donut.png" alt="">
+                        <div style="font-size: 18px;"><b>Serve with</b></div>
+                        <div style="display: flex; margin-top: 20px; margin-left: 20px;">
+                            <div class="circle">
+                                <img src="cookies.png" alt="">
+                            </div>
+                            <div class="circle">
+                                <img src="cups.png" alt="">
+                            </div>
+                            <div class="circle">
+                                <img src="donut.png" alt="">
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-top: 20px; margin-left: 15px;">
+                            <div>COOKIES</div>
+                            <div style="margin-left: 65px; margin-right: 70px;">YOGURT</div>
+                            <div>DONUT</div>
+                        </div>
+                        <div style="display: flex; margin-top: 30px; align-items: center;">
+                            <button class="box_qt">-</button>
+                            <div style="font-size: 20px; margin-left: 20px;">2</div>
+                            <button class="box_qt">+</button>
+                            <button id="addtocard">ADD TO CARD</button>
                         </div>
                     </div>
-                    <div style="display: flex; margin-top: 20px; margin-left: 15px;">
-                        <div>COOKIES</div>
-                        <div style="margin-left: 65px; margin-right: 70px;">YOGURT</div>
-                        <div>DONUT</div>
+                    <div id="center_container1">
+                        <img src="circle_caramel.png" alt="" class="circle_caramel">
+                        <img src="caramel.png" alt="" style="margin-left: -460px; margin-top: -80px;" width="495px"
+                            height="495px">
                     </div>
-                    <div style="display: flex; margin-top: 30px; align-items: center;">
-                        <button class="box_qt">-</button>
-                        <div style="font-size: 20px; margin-left: 20px;">2</div>
-                        <button class="box_qt">+</button>
-                        <button id="addtocard">ADD TO CARD</button>
+                    <div id="right_container1">
+                        <div style="display: flex;">
+                            <img src="circle_ribbon.png" alt="" class="circle_ribbon">
+                            <img src="ribbon.png" alt="" width="186px" height="189px"
+                                style="margin-left: -188px; margin-top: -10px;">
+                            <div class="rating">
+                                5.0
+                                <img src="Vector.png" alt="" style="margin-left: 5px;">
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-top: 50px">
+                            <img src="circle_unicorn.png" alt="" class="circle_ribbon">
+                            <img src="unicorn.png" alt="" width="205px" height="195px"
+                                style="margin-left: -192px; margin-top: -20px;">
+                            <div class="rating" style="margin-left: -95px;">
+                                4.5
+                                <img src="Vector.png" alt="" style="margin-left: 5px;">
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-top: 50px">
+                            <img src="circle_strawberry.png" alt="" class="circle_ribbon">
+                            <img src="strawberry.png" alt="" width="150px" height="170px"
+                                style="margin-left: -170px; margin-top: 10px;">
+                            <div class="rating" style="margin-left: -60px;">
+                                5.0
+                                <img src="Vector.png" alt="" style="margin-left: 5px;">
+                            </div>
+                            <img src="pngwing 8 1.png" alt="" class="hide">
+                        </div>
                     </div>
                 </div>
-                <div id="center_container1">
-                    <img src="circle_caramel.png" alt="" class="circle_caramel">
-                    <img src="caramel.png" alt="" style="margin-left: -460px; margin-top: -80px;" width="495px"
-                        height="495px">
+            </div>
+            <div id="container_second">
+                <div id="p1">
+                    <img src="fantasy.png" alt="" style="margin-left: 60px; margin-top: -80px;">
+                    <div style="font-size: 20px; display: flex; justify-content: center;"><b>Fantasy Tail Frappucino</b></div>
+                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                        <div>Calories</div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                            <div>Total Fat 19g</div>  
+                            <div>29%</div> 
+                        </div>
+                        <div style="margin-top: 30px;">Saturated Fat 13g</div>
+                        <div style="margin-top: 30px;">Trans Fat 0.5g</div>
+                    </div>
                 </div>
-                <div id="right_container1">
-                    <div style="display: flex;">
-                        <img src="circle_ribbon.png" alt="" class="circle_ribbon">
-                        <img src="ribbon.png" alt="" width="186px" height="189px"
-                            style="margin-left: -188px; margin-top: -10px;">
-                        <div class="rating">
-                            5.0 
-                            <img src="Vector.png" alt="" style="margin-left: 5px;">
+                <div id="p1">
+                    <img src="mermaid.png" alt="" style="margin-left: 40px; margin-top: -100px;">
+                    <div style="font-size: 20px; display: flex; justify-content: center; margin-top: 25px;"><b>Mermaid Frappuccino</b></div>
+                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                        <div>Calories</div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                            <div>Total Fat 18g</div>  
+                            <div>29%</div> 
                         </div>
+                        <div style="margin-top: 30px;">Saturated Fat 11g</div>
+                        <div style="margin-top: 30px;">Trans Fat 0.52g</div>
                     </div>
-                    <div style="display: flex; margin-top: 50px">
-                        <img src="circle_unicorn.png" alt="" class="circle_ribbon">
-                        <img src="unicorn.png" alt="" width="205px" height="195px"
-                            style="margin-left: -192px; margin-top: -20px;">
-                        <div class="rating" style="margin-left: -95px;">
-                            4.5
-                            <img src="Vector.png" alt="" style="margin-left: 5px;">
+                </div>
+                <div id="p1">
+                    <img src="iced.png" alt="" style="margin-left: 60px; margin-top: -120px;">
+                    <div style="font-size: 20px; display: flex; justify-content: center;"><b>Iced Coffee</b></div>
+                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                        <div>Calories</div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                            <div>Total Fat 19g</div>  
+                            <div>8%</div> 
                         </div>
+                        <div style="margin-top: 30px;">Saturated Fat 3g</div>
+                        <div style="margin-top: 30px;">Trans Fat 0.1g</div>
                     </div>
-                    <div style="display: flex; margin-top: 50px">
-                        <img src="circle_strawberry.png" alt="" class="circle_ribbon">
-                        <img src="strawberry.png" alt="" width="150px" height="170px"
-                            style="margin-left: -170px; margin-top: 10px;">
-                        <div class="rating" style="margin-left: -60px;">
-                            5.0 
-                            <img src="Vector.png" alt="" style="margin-left: 5px;">
+                </div>
+                <div id="p1">
+                    <img src="creme.png" alt="" style="margin-left: 80px; margin-top: -100px;">
+                    <div style="font-size: 20px; display: flex; justify-content: center; margin-top: 20px;"><b>Crème Frappuccino</b></div>
+                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                        <div>Calories</div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                            <div>Total Fat 19g</div>  
+                            <div>23%</div> 
                         </div>
-                        <img src="pngwing 8 1.png" alt="" class="hide">
+                        <div style="margin-top: 30px;">Saturated Fat 10g</div>
+                        <div style="margin-top: 30px;">Trans Fat 0.4g</div>
                     </div>
                 </div>
             </div>
