@@ -8,19 +8,19 @@
     <title>Gift Cards</title>
     <style>
         #wrapper {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat';
         }
 
         #header {
             display: flex;
             align-items: center;
-            width: 100%;
             height: 55px;
-            margin-top: 15px;
+            margin-top: 35px;
+            margin-left: 30px;
 
         }
 
-        #left {
+        #header_left {
             display: flex;
             width: 18%;
             justify-content: center;
@@ -32,7 +32,7 @@
             font-size: 20px;
         }
 
-        #center{
+        #header_center{
             display: flex;
             margin-left: 100px;
             justify-content: space-between;
@@ -40,6 +40,7 @@
             width: 40%;
             font-weight: bold;
             color: #574747;
+            font-size: 18px;
         }
 
         li {
@@ -57,13 +58,12 @@
             box-shadow: 0 4px #3A8869;
             font-weight: bold;
         }
-
-        #right {
+        
+        #header_right {
             display: flex;
             align-items: center;
-            margin-left: 100px;
+            margin-left: 120px;
         }
-
         .input {
             border-radius: 50px;
             background-color: white;
@@ -87,28 +87,88 @@
             margin-bottom: 10px;
             margin-left: 220px;
         }
+        
+        #center_line1{
+            margin: 50px 120px 0 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #center_line2{
+            display: flex;
+            align-items: center;
+            background: #d4e9e2;
+            margin-top: 65px;
+            padding-left: 100px;
+            height: 110px;
+            font-size: 18px;
+            margin-bottom: -10px;
+        }
+        h4{
+            padding-right: 15px;
+            font-size: 20px;
+            
+        }
+        h5{
+            color: #574747;
+            padding-right: 30px;
+        }
+        #center_line2_button1{
+            background: #d4e9e2;
+            margin-left: 10px;
+            width: 120px;
+            height: 25px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600; 
+            box-shadow: 0 3px 3px 0 #3A8869;  
+        }
+        #center_line2_button2{
+            background: black;
+            width: 120px;
+            color: white;
+            height: 25px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-left: 10px;
+            box-shadow: 0 3px 3px 0 #3A8869;
+        }
+        h3{
+            margin-left: 100px;
+            margin-top: 65px;
+            margin-bottom: -25px;
+        }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
         <div id="header">
-            <div id="left">
-                <img src="logo.png" alt="" style="width: 70px;">
+            <div id="header_left">
+                <img src="logo.png" alt="" style="width: 90px;">
                 <div class="logo"><b>STARBUCKS</b></div>
             </div>
-            <div id="center">
+            <div id="header_center">
                 <li><a href="#">Trending</a></li>
                 <li><a href="#">Rewards</a></li>
                 <li><a href="#">Gift Cards</a></li>
                 <li><a href="#">Reserve</a></li>
                 <li><a href="#">Delivery</a></li>
             </div>
-            <div id="right">
+            <div id="header_right">
                 <input class="input" type="text" placeholder="Search">
                 <img src="Search.png" alt="" class="search_img">
                 <img class="cart_img" src="Cart.png" alt="">
             </div>
+        </div>
+        <div id="center">
+            <h3>FEATURED</h3>
+            <div id="center_line1">
+                <img src="ft1.png" alt="">
+                <img src="ft2.png" alt="">
+                <img src="ft3.png" alt="">
+                <img src="ft4.png" alt="">
+            </div>
+            
         </div>
     </div>
 </body>
