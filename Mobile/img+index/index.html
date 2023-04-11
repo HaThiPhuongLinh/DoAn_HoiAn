@@ -8,7 +8,7 @@
     <title>Mobile</title>
     <style>
         #wrapper {
-            font-family: "SF Pro Text";
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,7 +32,8 @@
 
         #center {
             flex-direction: column;
-            align-items: center;
+            margin-left: 18px;
+            margin-right: 18px;
             display: flex;
         }
 
@@ -89,6 +90,51 @@
             align-items: center;
             justify-content: center;
         }
+        .center_item1{
+            border-bottom: 1px solid #786b6b;
+        }
+        #center_item1_img_line1{
+            background: #F2F0EB;
+            width: 170px;
+            height: 170px;
+            border-radius: 20px;
+        }
+        #center_item1_img_line2{
+            background: #F2F0EB;
+            width: 170px;
+            height: 220px;
+            border-radius: 20px;
+        }
+        #center_item1_line1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .center_item1_img1{
+            padding-left: 20px;
+        }
+        .center_item1_img2{
+            padding-left: 10px;
+        }
+        #center_item1_line2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #center_item1_text{
+            display: flex;
+            margin: -30px 20px 0 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #center_item1_button{
+            background: #006241;
+            color: white;
+            border-radius: 20px;
+            width: 90px;
+            margin-top: 10px;
+            margin-left: 260px;
+            border: #F2F0EB;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -105,7 +151,7 @@
                     <img src="logo.png" alt="">
                     <img src="Group 578.png" alt="">
                 </div>
-                <div style="color: #545151; width: 320px;">Good morning!</div>
+                <div style="color: #908b8b; font-weight: bold;">Good morning!</div>
                 <div style="margin-top: 10px;">
                     <img src="Frame 1.png" alt="">
                     <div style="margin-left: 30px; margin-top: -100px; color: white;">
@@ -120,6 +166,43 @@
                     <div class="food">Food</div>
                     <div class="chocolate">Chocolate</div>
                 </div>
+                <div class="center_item1">
+                    <p style="margin-left: 20px; font-weight: 500; color: #625c5c;">Drinks</p>
+                    <div id="center_item1_line1">
+                        <div id="center_item1_img_line1">
+                            <img class="center_item1_img1" src="grape.png" alt="" >
+                            <div id="center_item1_text">
+                                <h5 style="font-size: 13px; padding-top: 5px;">Fantasy Tail</h5>
+                                <h3 style="color: #006241;">$26</h3>
+                            </div>
+                        </div>
+                        <div id="center_item1_img_line2">
+                            <img class="center_item1_img2" style="padding-left: 15px;" src="raibow.png" alt="">
+                            <div id="center_item1_text" style="margin-top: -10px;">
+                                <h5 style="font-size: 13px; padding-top: 5px;">Rainbow Drink</h5>
+                                <h3 style="color: #006241;">$33</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="center_item1_line2">
+                        <div id="center_item1_img_line2" style="margin-top: -35px;" >
+                            <img class="center_item1_img2" src="red.png" alt="">
+                            <div id="center_item1_text">
+                                <h5 style="font-size: 13px; padding-top: 5px;">Red Velvet</h5>
+                                <h3 style="color: #006241;">$24</h3>
+                            </div>
+                        </div>
+                        <div id="center_item1_img_line1" style="margin-top: 15px;" >
+                            <img class="center_item1_img1" src="grape.png" alt="">
+                            <div id="center_item1_text">
+                                <h5 style="font-size: 13px; padding-top: 5px;">Grape</h5>
+                                <h3 style="color: #006241;">$23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="center_item1_button">More >></button>
+                </div>
+                
             </div>
         </div>
     </div>
