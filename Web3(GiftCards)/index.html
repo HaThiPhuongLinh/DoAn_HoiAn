@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards</title>
+    <style>
+        #wrapper {
+            font-family: 'Montserrat';
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            height: 55px;
+            margin-top: 35px;
+            margin-left: 30px;
+
+        }
+
+        #header_left {
+            display: flex;
+            width: 18%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        #header_center{
+            display: flex;
+            margin-left: 100px;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            font-weight: bold;
+            color: #574747;
+            font-size: 18px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+            padding: 11px;
+        }
+
+        a:hover {
+            color: #3A8869;
+            box-shadow: 0 4px #3A8869;
+            font-weight: bold;
+        }
+        
+        #header_right {
+            display: flex;
+            align-items: center;
+            margin-left: 120px;
+        }
+        .input {
+            border-radius: 50px;
+            background-color: white;
+            border: none;
+            width: 170px;
+            height: 35px;
+            color: rgb(150, 150, 150);
+            font-size: 15px;
+            padding-left: 50px;
+            box-shadow: 3px 3px 0px 0px gainsboro;
+        }
+
+        .search_img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -200px;
+        }
+
+        .cart_img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 220px;
+        }
+        
+        #center_line1{
+            margin: 50px 120px 0 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #center_line2{
+            display: flex;
+            align-items: center;
+            background: #d4e9e2;
+            margin-top: 65px;
+            padding-left: 100px;
+            height: 110px;
+            font-size: 18px;
+            margin-bottom: -10px;
+        }
+        h4{
+            padding-right: 15px;
+            font-size: 20px;
+            
+        }
+        h5{
+            color: #574747;
+            padding-right: 30px;
+        }
+        #center_line2_button1{
+            background: #d4e9e2;
+            margin-left: 10px;
+            width: 120px;
+            height: 25px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600; 
+            box-shadow: 0 3px 3px 0 #3A8869;  
+        }
+        #center_line2_button2{
+            background: black;
+            width: 120px;
+            color: white;
+            height: 25px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-left: 10px;
+            box-shadow: 0 3px 3px 0 #3A8869;
+        }
+        h3{
+            margin-left: 100px;
+            margin-top: 65px;
+            margin-bottom: -25px;
+        }
+        #center_footer{
+            display: flex;
+            background: #ececec;
+            margin-top: 55px;
+            padding: 40px 0 40px 100px;
+        }
+        #center_footer_item1{
+            padding-right: 50px;
+        }
+        #center_footer_item2_header{
+            font-weight: 600;      
+            font-size: 18px;      
+        }
+        #center_footer_item2_text{
+            font-weight: 600;      
+            font-size: 14px;
+            color: #9e8a8a;
+            line-height: 25px;      
+        }
+        #footer{
+            margin: 10px 75px 0 110px;
+        }
+        #footer_above{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+        #footer_above_item{
+            width: 185px;
+        }
+        #footer_above_item_header{
+            padding-bottom: 10px;
+        }
+        .footer_above_item_text{
+            padding-bottom: 30px;
+            color: gray;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        #footer_below{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #footer_below_left{
+            display: flex;
+            align-items: center;
+            width: 210px;
+            justify-content: space-between;
+        }
+        #footer_below_right{
+            font-size: 12.5px;
+            width: 370px;
+            font-weight: 700;
+            margin-right: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header_left">
+                <img src="logo.png" alt="" style="width: 90px;">
+                <div class="logo"><b>STARBUCKS</b></div>
+            </div>
+            <div id="header_center">
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Reserve</a></li>
+                <li><a href="#">Delivery</a></li>
+            </div>
+            <div id="header_right">
+                <input class="input" type="text" placeholder="Search">
+                <img src="Search.png" alt="" class="search_img">
+                <img class="cart_img" src="Cart.png" alt="">
+            </div>
+        </div>
+        <div id="center">
+            <h3>FEATURED</h3>
+            <div id="center_line1">
+                <img src="ft1.png" alt="">
+                <img src="ft2.png" alt="">
+                <img src="ft3.png" alt="">
+                <img src="ft4.png" alt="">
+            </div>
+            <div id="center_line2">
+                <h4>Got a gift card?</h4>
+                <h5>Earns 2 <img src="Vector.png" alt=""> per $1</h5>
+                <button id="center_line2_button1">Add or Reload</button>
+                <button id="center_line2_button2">Check balance</button>
+                <h5 style="margin-left: 535px; font-size: 14px; color: black;">Card Terms & Conditions</h5>
+            </div>
+            <h3>EASTER</h3>
+            <div id="center_line1">
+                <img src="es1.png" alt="">
+                <img src="es2.png" alt="">
+                <img src="es3.png" alt="">
+                <img src="es4.png" alt="">
+            </div>
+            <h3>PET LOVERS</h3>
+            <div id="center_line1">
+                <img src="p1.png" alt="">
+                <img src="p2.png" alt="">
+                <img src="p3.png" alt="">
+                <img src="p4.png" alt="">
+            </div>
+            <h3>BIRTHDAY</h3>
+            <div id="center_line1">
+                <img src="b1 (1).png" alt="">
+                <img src="b2 (1).png" alt="">
+                <img src="b3 (1).png" alt="">
+                <img src="b4.png" alt="">
+            </div>
+            <h3>CELEBRATION</h3>
+            <div id="center_line1">
+                <img src="c1.png" alt="">
+                <img src="c2.png" alt="">
+                <img src="c3.png" alt="">
+                <img src="c4.png" alt="">
+            </div>
+            <div id="center_footer">
+                <img id="center_footer_item1" src="Bulk.png" alt="">
+                <div id="center_footer_item2">
+                    <p id="center_footer_item2_header">Gift Cards in Bulk</p>
+                    <p id="center_footer_item2_text">There's an easier way to buy Starbucks <br> 
+                        Cards in bulk! Give a Starbucks Card to <br>
+                        gift, reward, incentivize, or show <br>
+                        appreciation towards your customers, <br>
+                        clients and team members.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_above">
+                <div id="footer_above_item">
+                    <h4 id="footer_above_item_header">About Us</h4>
+                    <div class="footer_above_item_text">Our Company</div>
+                    <div class="footer_above_item_text">Our Coffee</div>
+                    <div class="footer_above_item_text">Stories and News</div>
+                    <div class="footer_above_item_text">Starbucks Archive</div>
+                    <div class="footer_above_item_text">Investor Relations</div>
+                    <div class="footer_above_item_text">Customer Service</div>
+                </div>
+                <div id="footer_above_item">
+                    <h4 id="footer_above_item_header">Careers</h4>
+                    <div class="footer_above_item_text">Culture and Values</div>
+                    <div class="footer_above_item_text">Inclusion, Diversity, and Equity</div>
+                    <div class="footer_above_item_text">College Achievement Plan</div>
+                    <div class="footer_above_item_text">Alumni Community</div>
+                    <div class="footer_above_item_text">U.S.Careers</div>
+                    <div class="footer_above_item_text">International Careers</div>
+                </div>
+                <div id="footer_above_item">
+                    <h4 id="footer_above_item_header">Social Impact</h4>
+                    <div class="footer_above_item_text">People</div>
+                    <div class="footer_above_item_text">Planet</div>
+                    <div class="footer_above_item_text">Environmental and Social Impact Reporting</div>
+                </div>
+                <div id="footer_above_item">
+                    <h4 id="footer_above_item_header">For Business Partners</h4>
+                    <div class="footer_above_item_text">Landlord Support Center</div>
+                    <div class="footer_above_item_text">Suppliers</div>
+                    <div class="footer_above_item_text">Corporate Gift Card Sales</div>
+                    <div class="footer_above_item_text">Office and Foodservice Coffee</div>
+                </div>
+            </div>
+            <div id="footer_below">
+                <div id="footer_below_left">
+                    <img src="spotify.png" alt="">
+                    <img src="fb.png" alt="">
+                    <img src="pinterest.png" alt="">
+                    <img src="twitter.png" alt="">
+                    <img src="youtube.png" alt="">
+                </div>
+                <div id="footer_below_right">© 2023 Starbucks Coffee Company. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

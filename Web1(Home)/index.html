@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #wrapper {
+            font-family: 'Montserrat';
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            height: 55px;
+            margin-top: 35px;
+            margin-left: 30px;
+
+        }
+
+        #header_left {
+            display: flex;
+            width: 18%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        #header_center{
+            display: flex;
+            margin-left: 100px;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            font-weight: bold;
+            color: #574747;
+            font-size: 18px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+            padding: 11px;
+        }
+
+        a:hover {
+            color: #3A8869;
+            box-shadow: 0 4px #3A8869;
+            font-weight: bold;
+        }
+        
+        #header_right {
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+        }
+
+        .input {
+            border-radius: 50px;
+            background-color: white;
+            border: none;
+            width: 170px;
+            height: 35px;
+            color: rgb(150, 150, 150);
+            font-size: 15px;
+            padding-left: 50px;
+            box-shadow: 3px 3px 0px 0px gainsboro;
+        }
+
+        .search_img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -200px;
+        }
+
+        .cart_img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 220px;
+        }
+        #center{
+            margin: 50px 75px 0 75px;
+        }
+        #center_line1{
+            display: flex;
+        }
+        #center_line1_left{
+            width: 33%;
+        }
+        h1{
+            font-size: 77px;
+            margin: 0;
+        }
+        #center_line1_left_text{
+            margin-top: 35px;
+            font-size: 18px;
+            
+            color: #574747;
+        }
+        #center_line1_left_price{
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #center_line1_left_buy{
+            display: flex;
+            align-items: center;
+            background: black;
+            color: white;
+            width: 170px;
+            height: 60px;
+            border-radius: 50px;
+            justify-content: space-around;
+            font-size: 20px;
+            padding-left: 10px;
+            box-shadow: 0px 3px 3px 0 #3A8869;
+        }
+        #center_line1_left_buy_item{
+            background: rgb(255, 129, 18);
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            margin: 0;
+            border-radius: 50px;
+            font-size: 30px;
+            padding: 0 5px 8px 5px;
+        }
+        #center_line1_center{
+            width: 33%;
+            margin-left: 105px;
+        }
+        #center_line1_center_img1{
+            margin-top: 50px;
+            margin-bottom: -45px;
+        }
+        #center_line1_center_img2{
+            margin-top: -400px;
+            margin-left: 10px;
+        }
+        #center_line1_center_item{
+            background: rgb(242, 224, 194);
+            width: 280px;
+            height: 80px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: -85px;
+            margin-left: -80px;
+        }
+        #center_line1_right{
+            margin-left: 100px;
+            width: 33%;
+            padding-top: 40px;
+            font-size: 13px;
+            color: #574747;
+        }
+        #center_line1_right_item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+        }
+        #center_line1_right_img{
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 0 3px 3px 0 lightgray;
+            margin-right: 20px;
+        }
+        h3{
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        #center_line2{
+            display: flex;
+            margin-top: 55px;
+            background: #d4e9e2;
+            width: 1300px;
+            height: 265px;
+        }
+        #center_line2_left{
+            width: 50%;
+        }
+        #center_line2_right{
+            width: 50%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #center_line2_right_text{
+            color: #574747;
+            margin: 30px 50px 30px 50px;
+            line-height: 25px;
+        }
+        #center_line2_right_button{
+            background: #d4e9e2;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 20px;
+            width: 100px;
+            font-weight: 600;
+            box-shadow: 0 2px 4px 0 #5fbb97;
+        }
+        #center_line3{
+            display: flex;
+            margin-top: 55px;
+            background: #d4e9e2;
+            width: 1300px;
+            height: 420px;
+        }
+        #center_line3_right{
+            width: 50%;
+        }
+        #center_line3_left{
+            width: 50%;
+            text-align: center;
+            margin-top: 60px;
+        }
+        #center_line3_left_text1{
+            font-size: 30px;
+            margin-left: 15px;
+        }
+        #center_line3_left_text2{
+            color: #574747;
+            margin: 40px 50px 30px 110px;
+            line-height: 30px;
+        }
+        #center_line4{
+            display: flex;
+            margin-top: 60px;
+            background: #a0c292;
+            width: 1300px;
+            height: 420px;
+        }
+        #center_line4_left{
+            width: 50%;
+        }
+        #center_line4_right{
+            width: 50%;
+            text-align: center;
+            margin-top: 80px;
+            margin-left: 75px;
+        }
+        #center_line4_right_text1{
+            font-size: 30px;
+        }
+        #center_line4_right_text2{
+            color: #574747;
+            margin: 30px 50px 30px 50px;
+            line-height: 25px;
+        }
+        #center_line4_right_button{
+            background: #a0c292;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 20px;
+            width: 100px;
+            font-weight: 600;
+            box-shadow: 0 2px 4px 0 #5fbb97;
+        }
+        #footer{
+            margin: 10px 75px 0 110px;
+        }
+        #footer_above{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+        #footer_above_item{
+            width: 185px;
+        }
+        h4{
+            padding-bottom: 10px;
+        }
+        .footer_above_item_text{
+            padding-bottom: 30px;
+            color: gray;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        #footer_below{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #footer_below_left{
+            display: flex;
+            align-items: center;
+            width: 210px;
+            justify-content: space-between;
+        }
+        #footer_below_right{
+            font-size: 12.5px;
+            width: 370px;
+            font-weight: 700;
+            margin-right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header_left">
+                <img src="logo.png" alt="" style="height: 90px;">
+                <div class="logo"><b>STARBUCKS</b></div>
+            </div>
+            <div id="header_center">
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Reserve</a></li>
+                <li><a href="#">Delivery</a></li>
+            </div>
+            <div id="header_right">
+                <input class="input" type="text" placeholder="Search">
+                <img src="Search.png" alt="" class="search_img">
+                <img class="cart_img" src="Cart.png" alt="">
+            </div>
+        </div>
+        <div id="center">
+            <div id="center_line1">
+                <div id="center_line1_left">
+                    <h1>Midnight</h1>
+                    <h1 style="margin-top: -25px;">Frappuccino</h1>
+                    <p id="center_line1_left_text">The Midnight Mint Mocha Frappuccino <br> features extra dask cocoa blended with <br> Frappuchino Roast coffee.</p>
+                    <p id="center_line1_left_price">$ 8.60</p>
+                    <div id="center_line1_left_buy">Buy Now <p id="center_line1_left_buy_item">></p> </div>
+                </div>
+                <div id="center_line1_center">
+                    <div>
+                        <img id="center_line1_center_img1" src="Circle.png" alt="">
+                        <img id="center_line1_center_img2" src="midnight.png" alt="">
+                    </div>
+                    <div id="center_line1_center_item"> 
+                        <img src="image 5.png" alt="">
+                        <img src="image 6.png" alt="">
+                        <img src="image 7.png" alt="">
+                        <img src="image 8.png" alt="">
+                    </div>
+                </div> 
+                <div id="center_line1_right">
+                    <div id="center_line1_right_item">
+                        <img id="center_line1_right_img" src="cups.png" alt="">
+                        <div>
+                            <h3>Sippy cups</h3> 
+                            <p>Are the New Norm <br> for iced coffee</p>
+                        </div>
+                    </div>
+                    <div id="center_line1_right_item">
+                        <img id="center_line1_right_img" src="donut.png" alt="">
+                        <div>
+                            <h3>Donut</h3>
+                            <p>Have a donut with <br> frappuccino</p>
+                        </div>
+                    </div>
+                    <div id="center_line1_right_item">
+                        <img id="center_line1_right_img" src="cookies.png" alt="">
+                        <div>
+                            <h3>Cookies</h3>
+                            <p>Enjoy our sugar <br> free cookies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="center_line2">
+                <img id="center_line2_left" src="post1.png" alt="">
+                <div id="center_line2_right">
+                    <h3>Spring in your step, Rewards in your cup</h3>
+                    <h3 id="center_line2_right_text">Shake up your usual and start earning Rewards-join today!*</h3>
+                    <button id="center_line2_right_button">Join now</button>
+                </div>
+            </div>
+            <div id="center_line3">
+                <div id="center_line3_left">
+                    <h2 id="center_line3_left_text1">Savory and <br> satisfying</h2>
+                    <h3 id="center_line3_left_text2">The Impossible™ Breakfast Sandwich, featuring an Impossible™ Sausage Patty Made From Plants, is always a great choice.**</h3>
+                    <button id="center_line2_right_button">Order now</button>
+                </div>
+                <img id="center_line3_right" src="post2.png" alt="">
+            </div>
+            <div id="center_line4">
+                <img id="center_line4_left" src="post3.png" alt="">
+                <div id="center_line4_right">
+                    <h2 id="center_line4_right_text1">Brighten your day</h2>
+                    <h3 id="center_line4_right_text2">Enjoy a cheery Pink Drink, Paradise Drink or Dragon Drink® Starbucks Refreshers® beverage.</h3>
+                    <button id="center_line4_right_button">Order now</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_above">
+                <div id="footer_above_item">
+                    <h4>About Us</h4>
+                    <div class="footer_above_item_text">Our Company</div>
+                    <div class="footer_above_item_text">Our Coffee</div>
+                    <div class="footer_above_item_text">Stories and News</div>
+                    <div class="footer_above_item_text">Starbucks Archive</div>
+                    <div class="footer_above_item_text">Investor Relations</div>
+                    <div class="footer_above_item_text">Customer Service</div>
+                </div>
+                <div id="footer_above_item">
+                    <h4>Careers</h4>
+                    <div class="footer_above_item_text">Culture and Values</div>
+                    <div class="footer_above_item_text">Inclusion, Diversity, and Equity</div>
+                    <div class="footer_above_item_text">College Achievement Plan</div>
+                    <div class="footer_above_item_text">Alumni Community</div>
+                    <div class="footer_above_item_text">U.S.Careers</div>
+                    <div class="footer_above_item_text">International Careers</div>
+                </div>
+                <div id="footer_above_item">
+                    <h4>Social Impact</h4>
+                    <div class="footer_above_item_text">People</div>
+                    <div class="footer_above_item_text">Planet</div>
+                    <div class="footer_above_item_text">Environmental and Social Impact Reporting</div>
+                </div>
+                <div id="footer_above_item">
+                    <h4>For Business Partners</h4>
+                    <div class="footer_above_item_text">Landlord Support Center</div>
+                    <div class="footer_above_item_text">Suppliers</div>
+                    <div class="footer_above_item_text">Corporate Gift Card Sales</div>
+                    <div class="footer_above_item_text">Office and Foodservice Coffee</div>
+                </div>
+            </div>
+            <div id="footer_below">
+                <div id="footer_below_left">
+                    <img src="spotify.png" alt="">
+                    <img src="fb.png" alt="">
+                    <img src="pinterest.png" alt="">
+                    <img src="twitter.png" alt="">
+                    <img src="youtube.png" alt="">
+                </div>
+                <div id="footer_below_right">© 2023 Starbucks Coffee Company. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

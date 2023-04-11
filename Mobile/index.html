@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <style>
+        #wrapper {
+            font-family: 'SF Pro';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+        }
+
+        #full {
+            width: 390px;
+            height: 1500px;
+            background-color: white;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            height: 45px;
+            margin-top: 10px;
+            margin-right: 30px;
+            justify-content: space-between;
+        }
+
+        #center {
+            flex-direction: column;
+            margin-left: 18px;
+            margin-right: 18px;
+            display: flex;
+        }
+
+        .menu {
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .choose {
+            margin-top: 45px;
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .all {
+            background: #006241;
+            border-radius: 10px;
+            width: 71.22px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .drinks {
+            background: #F2F0EB;
+            border-radius: 10px;
+            width: 71.22px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .food {
+            background: #F2F0EB;
+            border-radius: 10px;
+            width: 71.22px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chocolate {
+            background: #F2F0EB;
+            border-radius: 10px;
+            width: 94px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .center_item1{
+            border-bottom: 1px solid #786b6b;
+        }
+        #center_item1_img_line1{
+            background: #EEEEEE;
+            width: 170px;
+            height: 170px;
+            border-radius: 20px;
+        }
+        #center_item1_img_line2{
+            background: #EEEEEE;
+            width: 170px;
+            height: 210px;
+            border-radius: 20px;
+        }
+        #center_item1_line1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .center_item1_img1{
+            padding-left: 20px;
+        }
+        .center_item1_img2{
+            padding-left: 10px;
+        }
+        #center_item1_line2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #center_item1_text{
+            display: flex;
+            margin: -30px 20px 0 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #center_item1_button{
+            background: #006241;
+            color: white;
+            border-radius: 20px;
+            width: 70px;
+            margin-top: 10px;
+            margin-left: 280px;
+            border: none;
+            margin-bottom: 20px;
+        } 
+        #center_item2_img_line1{
+            background: #EEEEEE;
+            width: 147px;
+            height: 155px;
+            border-radius: 20px;
+            margin-right: 35px;
+        }
+        #center_item2_img_line2{
+            background: #EEEEEE;
+            width: 147px;
+            height: 155px;
+            border-radius: 20px;
+            margin-right: 35px;
+        }
+        #center_item2_line1{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        #center_item2_line2{
+            display: flex;
+        }
+        #center_item2_text{
+            display: flex;
+            margin: -20px 10px 0 17px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #center_item2_button{
+            background: #006241;
+            color: white;
+            border-radius: 20px;
+            width: 70px;
+            margin-top: 10px;
+            margin-left: 280px;
+            border: #F2F0EB;
+            margin-bottom: 20px;
+        }
+        #center_item3{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        #center_item3_img{
+            width: 30%;
+            margin-left: 30px;
+        }
+        #center_item3_text{
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 12px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        #footer{
+            margin: 20px 30px 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer_item{
+            padding: 0 10px 10px 10px;
+            border-bottom: 5px solid white;
+        }
+        .footer_item:hover{
+            border-bottom: 5px solid #006241;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="full">
+            <div id="header">
+                <div style="margin-left: 40px;"><b>07:15</b></div>
+                <img src="wifi.png" alt="">
+            </div>
+            <div id="center">
+                <div class="menu">
+                    <img src="menu.png" alt="">
+                    <img src="logo.png" alt="">
+                    <img src="Group 578.png" alt="">
+                </div>
+                <div style="color: #545151;; margin-left: 20px;">Good Morning!</div>
+                <div style="margin-top: 8px;">
+                    <img src="Frame 1.png" alt="">
+                    <div style="margin-left: 30px; margin-top: -100px; color: white;">
+                        <div style="font-size: 18px; line-height: 22px;">Midjourney Jr</div>
+                        <div style="font-weight: 700; font-size: 30px; margin-top: 10px;">$ 355,89<img
+                                src="arrow_back.png" alt="" style="margin-left: 130px;"> </div>
+                    </div>
+                </div>
+                <div class="choose">
+                    <div class="all">All</div>
+                    <div class="drinks">Drinks</div>
+                    <div class="food">Food</div>
+                    <div class="chocolate">Chocolate</div>
+                </div>
+                <div class="center_item1">
+                    <p style="margin-left: 15px; font-weight: 500; color: black; font-size: 14px;">Drinks</p>
+                    <div id="center_item1_line1">
+                        <div id="center_item1_img_line1">
+                            <img src="tail.png" alt="" style="margin-left: -20px; margin-top: 5px;">
+                            <div id="center_item1_text">
+                                <div style="font-size: 13px; font-weight: 500; ">Fantasy Tail</div>
+                                <h3 style="color: #00623B;">$26</h3>
+                            </div>
+                        </div>
+                        <div id="center_item1_img_line2">
+                            <img class="center_item1_img2" style="padding-left: 15px;" src="raibow.png" alt="">
+                            <div id="center_item1_text" style="margin-top: -10px;">
+                                <div style="font-size: 13px; font-weight: 500; ">Rainbow Drink</div>
+                                <h3 style="color: #006241;">$33</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="center_item1_line2">
+                        <div id="center_item1_img_line2" style="margin-top: -25px;" >
+                            <img class="center_item1_img2" src="red.png" alt="">
+                            <div id="center_item1_text" style="margin-top: -30px;">
+                                <div style="font-size: 13px; font-weight: 500; ">Red Velvet</div>
+                                <h3 style="color: #006241;">$24</h3>
+                            </div>
+                        </div>
+                        <div id="center_item1_img_line1" style="margin-top: 15px;" >
+                            <img class="center_item1_img1" src="grape.png" alt="">
+                            <div id="center_item1_text" style="margin-top: -25px;">
+                                <h5 style="font-size: 13px; font-weight: 500; ">Grape</h5>
+                                <h3 style="color: #006241;">$23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="center_item1_button">More >></button>
+                </div>
+                <div class="center_item2">
+                    <p style="margin-left: 15px; font-weight: 500; color: black; font-size: 14px;">Food</p>
+                    <div id="center_item2_line1">
+                        <div id="center_item2_img_line1">
+                            <img src="food1.png" alt="" style="padding-left: 15px; padding-top: 15px;">
+                            <div id="center_item2_text">
+                                <h5 style="font-size: 10px; padding-top: 1px;">Spinach, Feta & Egg White Wrap</h5>
+                                <h3 style="color: #006241; font-size: 15px;">$15</h3>
+                            </div>
+                        </div>
+                        <div id="center_item2_img_line2">
+                            <img src="image 1.png" alt="" style="padding-top: 15px; padding-left: 10px;">
+                            <div id="center_item2_text" style="margin-top: -10px;">
+                                <h5 style="font-size: 10px; padding-top: 5px;">Bacon, Sausage & Egg Wrap</h5>
+                                <h3 style="color: #006241; font-size: 15px;">$12 </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="center_item2_line2">
+                        <div id="center_item2_img_line2" >
+                            <img src="image 3.png" alt="" style="padding-left: 10px; padding-top: 15px;">
+                            <div id="center_item2_text">
+                                <h5 style="font-size: 10px; padding-top: 5px;">Sausage,Cheddar & Egg Sandwich</h5>
+                                <h3 style="color: #006241; font-size: 15px;">$10</h3>
+                            </div>
+                        </div>
+                        <div id="center_item2_img_line1">
+                            <img src="image 4.png" alt="" style="padding-left: 5px; padding-top: 15px;">
+                            <div id="center_item2_text">
+                                <h5 style="font-size: 10px; padding-top: 5px;">Bacon,Gouda & <br> Egg Sandwich</h5>
+                                <h3 style="color: #006241; font-size: 15px;">$11</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="center_item2_button">More >></button>
+                </div>
+                <p style="margin-left: 15px; margin-top: -10px; font-weight: 500; color: black; font-size: 14px;">Sous Vide Egg Bites</p>
+                <div id="center_item3">
+                    <div id="center_item3_img">
+                        <img src="bake1.png" alt="">
+                        <div id="center_item3_text">Kale & Mushroom Egg Bites</div>
+                    </div>
+                    <div id="center_item3_img">
+                        <img src="bake2.png" alt="">
+                        <div id="center_item3_text">Bacon & Gruyere Egg Bites</div>
+                    </div>
+                    <div id="center_item3_img">
+                        <img src="bake3.png" alt="">
+                        <div id="center_item3_text">Egg White & Roasted Red Pepper Egg Bites</div>
+                    </div>
+                    <div><img src="Vector 1.png" alt="" style="margin-top: 30px; margin-left: 20px;"></div>
+                </div>
+            </div>
+            <div id="footer">
+                <img class="footer_item" src="Home.png" alt="">
+                <img class="footer_item" src="Wallet.png" alt="">
+                <img class="footer_item" src="Ticket Star.png" alt="">
+                <img class="footer_item" src="Location.png" alt="">
+                <img class="footer_item" src="Profile Circle.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
