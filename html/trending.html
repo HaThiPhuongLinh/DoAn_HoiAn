@@ -16,10 +16,13 @@
 
         #header {
             display: flex;
-            align-items: center;
-            height: 55px;
-            margin-top: 35px;
-            margin-left: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: rgb(255 255 255 / 80%);
+            backdrop-filter: blur(20px);
 
         }
 
@@ -94,7 +97,7 @@
         #center2 {}
 
         #container1 {
-            margin-top: 40px;
+            margin-top: 110px;
             display: flex;
             justify-content: center;
         }
@@ -235,13 +238,50 @@
             border-radius: 20px;
         }
 
-        #footer{
+        #footer {
+            margin: 10px 75px 0 130px;
+        }
+
+        #footer_above {
             display: flex;
-            justify-content: flex-end;
-            font-size: 12.5px;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        #footer_above_item {
+            width: 185px;
+        }
+
+        h4 {
+            padding-bottom: 10px;
+        }
+
+        .footer_above_item_text {
+            padding-bottom: 30px;
+            color: gray;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        #footer_below {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-top: 10px;
-            font-weight: 700; 
-            margin-right: 145px;
+        }
+
+        #footer_below_left {
+            display: flex;
+            align-items: center;
+            width: 210px;
+            justify-content: space-between;
+        }
+
+        #footer_below_right {
+            font-size: 12.5px;
+            width: 370px;
+            font-weight: 700;
+            margin-right: 25px;
         }
     </style>
 </head>
@@ -428,7 +468,51 @@
                     <div style="margin-left: 20px; font-size: 18px;"><b>PB&J Protein Box</b></div>
                 </div>
             </div>
-            <div id="footer">© 2023 Starbucks Coffee Company. All rights reserved.</div>
+            <div id="footer">
+                <div id="footer_above">
+                    <div id="footer_above_item">
+                        <h4>About Us</h4>
+                        <div class="footer_above_item_text">Our Company</div>
+                        <div class="footer_above_item_text">Our Coffee</div>
+                        <div class="footer_above_item_text">Stories and News</div>
+                        <div class="footer_above_item_text">Starbucks Archive</div>
+                        <div class="footer_above_item_text">Investor Relations</div>
+                        <div class="footer_above_item_text">Customer Service</div>
+                    </div>
+                    <div id="footer_above_item">
+                        <h4>Careers</h4>
+                        <div class="footer_above_item_text">Culture and Values</div>
+                        <div class="footer_above_item_text">Inclusion, Diversity, and Equity</div>
+                        <div class="footer_above_item_text">College Achievement Plan</div>
+                        <div class="footer_above_item_text">Alumni Community</div>
+                        <div class="footer_above_item_text">U.S.Careers</div>
+                        <div class="footer_above_item_text">International Careers</div>
+                    </div>
+                    <div id="footer_above_item">
+                        <h4>Social Impact</h4>
+                        <div class="footer_above_item_text">People</div>
+                        <div class="footer_above_item_text">Planet</div>
+                        <div class="footer_above_item_text">Environmental and Social Impact Reporting</div>
+                    </div>
+                    <div id="footer_above_item">
+                        <h4>For Business Partners</h4>
+                        <div class="footer_above_item_text">Landlord Support Center</div>
+                        <div class="footer_above_item_text">Suppliers</div>
+                        <div class="footer_above_item_text">Corporate Gift Card Sales</div>
+                        <div class="footer_above_item_text">Office and Foodservice Coffee</div>
+                    </div>
+                </div>
+                <div id="footer_below">
+                    <div id="footer_below_left">
+                        <img src="../images/img(home)/spotify.png" alt="">
+                        <img src="../images/img(home)/fb.png" alt="">
+                        <img src="../images/img(home)/pinterest.png" alt="">
+                        <img src="../images/img(home)/twitter.png" alt="">
+                        <img src="../images/img(home)/youtube.png" alt="">
+                    </div>
+                    <div id="footer_below_right">© 2023 Starbucks Coffee Company. All rights reserved.</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

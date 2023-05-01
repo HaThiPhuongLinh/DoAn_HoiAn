@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +15,19 @@
         }
 
         #header {
-            display: flex;
+            /* display: flex;
             align-items: center;
             height: 55px;
             margin-top: 35px;
-            margin-left: 30px;
+            margin-left: 30px; */
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: rgb(255 255 255 / 80%);
+            backdrop-filter: blur(20px);
 
         }
 
@@ -35,7 +44,7 @@
             font-size: 20px;
         }
 
-        #header_center{
+        #header_center {
             display: flex;
             margin-left: 100px;
             justify-content: space-between;
@@ -61,12 +70,13 @@
             box-shadow: 0 4px #3A8869;
             font-weight: bold;
         }
-        
+
         #header_right {
             display: flex;
             align-items: center;
             margin-left: 120px;
         }
+
         .input {
             border-radius: 50px;
             background-color: white;
@@ -79,43 +89,50 @@
             box-shadow: 3px 3px 0px 0px gainsboro;
         }
 
-        .search_img{
+        .search_img {
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -200px;
         }
 
-        .cart_img{
+        .cart_img {
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: 220px;
         }
-        #center{
-            margin: 50px 75px 0 75px;
+
+        #center {
+            margin: 120px 75px 0 75px;
         }
-        #center_line1{
+
+        #center_line1 {
             display: flex;
         }
-        #center_line1_left{
+
+        #center_line1_left {
             width: 33%;
         }
-        h1{
+
+        h1 {
             font-size: 77px;
             margin: 0;
         }
-        #center_line1_left_text{
+
+        #center_line1_left_text {
             margin-top: 35px;
             font-size: 18px;
-            
+
             color: #574747;
         }
-        #center_line1_left_price{
+
+        #center_line1_left_price {
             font-size: 40px;
             font-weight: 700;
             margin-top: 30px;
             margin-bottom: 30px;
         }
-        #center_line1_left_buy{
+
+        #center_line1_left_buy {
             display: flex;
             align-items: center;
             background: black;
@@ -128,7 +145,8 @@
             padding-left: 10px;
             box-shadow: 0px 3px 3px 0 #3A8869;
         }
-        #center_line1_left_buy_item{
+
+        #center_line1_left_buy_item {
             background: rgb(255, 129, 18);
             text-align: center;
             height: 30px;
@@ -138,19 +156,23 @@
             font-size: 30px;
             padding: 0 5px 8px 5px;
         }
-        #center_line1_center{
+
+        #center_line1_center {
             width: 33%;
             margin-left: 105px;
         }
-        #center_line1_center_img1{
+
+        #center_line1_center_img1 {
             margin-top: 50px;
             margin-bottom: -45px;
         }
-        #center_line1_center_img2{
+
+        #center_line1_center_img2 {
             margin-top: -400px;
             margin-left: 10px;
         }
-        #center_line1_center_item{
+
+        #center_line1_center_item {
             background: rgb(242, 224, 194);
             width: 280px;
             height: 80px;
@@ -161,49 +183,58 @@
             margin-top: -85px;
             margin-left: -80px;
         }
-        #center_line1_right{
+
+        #center_line1_right {
             margin-left: 100px;
             width: 33%;
             padding-top: 40px;
             font-size: 13px;
             color: #574747;
         }
-        #center_line1_right_item{
+
+        #center_line1_right_item {
             display: flex;
             align-items: center;
             margin-bottom: 35px;
         }
-        #center_line1_right_img{
+
+        #center_line1_right_img {
             padding: 15px;
             border-radius: 50px;
             box-shadow: 0 3px 3px 0 lightgray;
             margin-right: 20px;
         }
-        h3{
+
+        h3 {
             margin-bottom: 0;
             font-size: 20px;
         }
-        #center_line2{
+
+        #center_line2 {
             display: flex;
             margin-top: 55px;
             background: #d4e9e2;
             width: 1300px;
             height: 265px;
         }
-        #center_line2_left{
+
+        #center_line2_left {
             width: 50%;
         }
-        #center_line2_right{
+
+        #center_line2_right {
             width: 50%;
             text-align: center;
             margin-top: 30px;
         }
-        #center_line2_right_text{
+
+        #center_line2_right_text {
             color: #574747;
             margin: 30px 50px 30px 50px;
             line-height: 25px;
         }
-        #center_line2_right_button{
+
+        #center_line2_right_button {
             background: #d4e9e2;
             padding: 5px;
             margin-top: 10px;
@@ -212,55 +243,66 @@
             font-weight: 600;
             box-shadow: 0 2px 4px 0 #5fbb97;
         }
-        #center_line3{
+
+        #center_line3 {
             display: flex;
             margin-top: 55px;
             background: #d4e9e2;
             width: 1300px;
             height: 420px;
         }
-        #center_line3_right{
+
+        #center_line3_right {
             width: 50%;
         }
-        #center_line3_left{
+
+        #center_line3_left {
             width: 50%;
             text-align: center;
             margin-top: 60px;
         }
-        #center_line3_left_text1{
+
+        #center_line3_left_text1 {
             font-size: 30px;
             margin-left: 15px;
         }
-        #center_line3_left_text2{
+
+        #center_line3_left_text2 {
             color: #574747;
             margin: 40px 50px 30px 110px;
             line-height: 30px;
         }
-        #center_line4{
+
+        #center_line4 {
             display: flex;
             margin-top: 60px;
             background: #a0c292;
             width: 1300px;
             height: 420px;
         }
-        #center_line4_left{
+
+        #center_line4_left {
             width: 50%;
         }
-        #center_line4_right{
+
+        #center_line4_right {
             width: 50%;
             text-align: center;
             margin-top: 80px;
             margin-left: 75px;
         }
-        #center_line4_right_text1{
+
+        #center_line4_right_text1 {
             font-size: 30px;
         }
-        #center_line4_right_text2{
+
+        #center_line4_right_text2 {
             color: #574747;
             margin: 30px 50px 30px 50px;
             line-height: 25px;
         }
-        #center_line4_right_button{
+
+        #center_line4_right_button {
             background: #a0c292;
             padding: 5px;
             margin-top: 10px;
@@ -269,39 +311,47 @@
             font-weight: 600;
             box-shadow: 0 2px 4px 0 #5fbb97;
         }
-        #footer{
+
+        #footer {
             margin: 10px 75px 0 110px;
         }
-        #footer_above{
+
+        #footer_above {
             display: flex;
             justify-content: space-between;
             width: 80%;
         }
-        #footer_above_item{
+
+        #footer_above_item {
             width: 185px;
         }
-        h4{
+
+        h4 {
             padding-bottom: 10px;
         }
-        .footer_above_item_text{
+
+        .footer_above_item_text {
             padding-bottom: 30px;
             color: gray;
             font-weight: 500;
             font-size: 13px;
         }
-        #footer_below{
+
+        #footer_below {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
         }
-        #footer_below_left{
+
+        #footer_below_left {
             display: flex;
             align-items: center;
             width: 210px;
             justify-content: space-between;
         }
-        #footer_below_right{
+
+        #footer_below_right {
             font-size: 12.5px;
             width: 370px;
             font-weight: 700;
@@ -309,6 +359,7 @@
         }
     </style>
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header">
@@ -334,27 +385,29 @@
                 <div id="center_line1_left">
                     <h1>Midnight</h1>
                     <h1 style="margin-top: -25px;">Frappuccino</h1>
-                    <p id="center_line1_left_text">The Midnight Mint Mocha Frappuccino <br> features extra dask cocoa blended with <br> Frappuchino Roast coffee.</p>
+                    <p id="center_line1_left_text">The Midnight Mint Mocha Frappuccino <br> features extra dask cocoa
+                        blended with <br> Frappuchino Roast coffee.</p>
                     <p id="center_line1_left_price">$ 8.60</p>
-                    <div id="center_line1_left_buy">Buy Now <p id="center_line1_left_buy_item">></p> </div>
+                    <div id="center_line1_left_buy">Buy Now <p id="center_line1_left_buy_item">></p>
+                    </div>
                 </div>
                 <div id="center_line1_center">
                     <div>
                         <img id="center_line1_center_img1" src="../images/img(home)/Circle.png" alt="">
                         <img id="center_line1_center_img2" src="../images/img(home)/midnight.png" alt="">
                     </div>
-                    <div id="center_line1_center_item"> 
+                    <div id="center_line1_center_item">
                         <img src="../images/img(home)/image 5.png" alt="">
                         <img src="../images/img(home)/image 6.png" alt="">
                         <img src="../images/img(home)/image 7.png" alt="">
                         <img src="../images/img(home)/image 8.png" alt="">
                     </div>
-                </div> 
+                </div>
                 <div id="center_line1_right">
                     <div id="center_line1_right_item">
                         <img id="center_line1_right_img" src="../images/img(home)/cups.png" alt="">
                         <div>
-                            <h3>Sippy cups</h3> 
+                            <h3>Sippy cups</h3>
                             <p>Are the New Norm <br> for iced coffee</p>
                         </div>
                     </div>
@@ -385,7 +438,8 @@
             <div id="center_line3">
                 <div id="center_line3_left">
                     <h2 id="center_line3_left_text1">Savory and <br> satisfying</h2>
-                    <h3 id="center_line3_left_text2">The Impossible™ Breakfast Sandwich, featuring an Impossible™ Sausage Patty Made From Plants, is always a great choice.**</h3>
+                    <h3 id="center_line3_left_text2">The Impossible™ Breakfast Sandwich, featuring an Impossible™
+                        Sausage Patty Made From Plants, is always a great choice.**</h3>
                     <button id="center_line2_right_button">Order now</button>
                 </div>
                 <img id="center_line3_right" src="../images/img(home)/post2.png" alt="">
@@ -394,7 +448,8 @@
                 <img id="center_line4_left" src="../images/img(home)/post3.png" alt="">
                 <div id="center_line4_right">
                     <h2 id="center_line4_right_text1">Brighten your day</h2>
-                    <h3 id="center_line4_right_text2">Enjoy a cheery Pink Drink, Paradise Drink or Dragon Drink® Starbucks Refreshers® beverage.</h3>
+                    <h3 id="center_line4_right_text2">Enjoy a cheery Pink Drink, Paradise Drink or Dragon Drink®
+                        Starbucks Refreshers® beverage.</h3>
                     <button id="center_line4_right_button">Order now</button>
                 </div>
             </div>
@@ -446,4 +501,5 @@
         </div>
     </div>
 </body>
+
 </html>
