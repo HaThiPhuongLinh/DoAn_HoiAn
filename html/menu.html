@@ -61,7 +61,7 @@
             list-style-type: none;
         }
 
-        a{
+        a {
             color: #574747;
         }
 
@@ -112,39 +112,46 @@
             max-width: 100%;
         }
 
-        #footer{
+        #footer {
             margin: 10px 75px 0 110px;
         }
-        #footer_above{
+
+        #footer_above {
             display: flex;
             justify-content: space-between;
             width: 80%;
         }
-        #footer_above_item{
+
+        #footer_above_item {
             width: 185px;
         }
-        #footer_above_item_header{
+
+        #footer_above_item_header {
             padding-bottom: 10px;
         }
-        .footer_above_item_text{
+
+        .footer_above_item_text {
             padding-bottom: 30px;
             color: gray;
             font-weight: 500;
             font-size: 13px;
         }
-        #footer_below{
+
+        #footer_below {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
         }
-        #footer_below_left{
+
+        #footer_below_left {
             display: flex;
             align-items: center;
             width: 210px;
             justify-content: space-between;
         }
-        #footer_below_right{
+
+        #footer_below_right {
             font-size: 12.5px;
             width: 370px;
             font-weight: 700;
@@ -195,8 +202,7 @@
                                     <div class="menu-tab text-center">
                                         <ul class="filters">
                                             <div class="filter-active"></div>
-                                            <li class="filter"
-                                                data-filter=".all, .Oleato, .HotCoffees, .IcedTeas">
+                                            <li class="filter" data-filter=".all, .Oleato, .HotCoffees, .IcedTeas">
                                                 ALL
                                             </li>
                                             <li class="filter" data-filter=".Oleato">
@@ -237,8 +243,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- 2 -->
-                                 <div class="col-lg-4 col-sm-6 cake-box-wp Oleato" data-cat="Oleato">
+                                <!-- 2 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp Oleato" data-cat="Oleato">
                                     <div class="cake-box text-center">
                                         <div class="cake-img">
                                             <img src="../images/img(menu)/drink1.png" alt="">
@@ -579,7 +585,54 @@
                     </div>
                 </div>
             </section>
-                         <!-- jquery  -->
+            <div id="footer">
+                <div id="footer_above">
+                    <div id="footer_above_item">
+                        <h4 id="footer_above_item_header">About Us</h4>
+                        <div class="footer_above_item_text">Our Company</div>
+                        <div class="footer_above_item_text">Our Coffee</div>
+                        <div class="footer_above_item_text">Stories and News</div>
+                        <div class="footer_above_item_text">Starbucks Archive</div>
+                        <div class="footer_above_item_text">Investor Relations</div>
+                        <div class="footer_above_item_text">Customer Service</div>
+                    </div>
+                    <div id="footer_above_item">
+                        <h4 id="footer_above_item_header">Careers</h4>
+                        <div class="footer_above_item_text">Culture and Values</div>
+                        <div class="footer_above_item_text">Inclusion, Diversity, and Equity</div>
+                        <div class="footer_above_item_text">College Achievement Plan</div>
+                        <div class="footer_above_item_text">Alumni Community</div>
+                        <div class="footer_above_item_text">U.S.Careers</div>
+                        <div class="footer_above_item_text">International Careers</div>
+                    </div>
+                    <div id="footer_above_item">
+                        <h4 id="footer_above_item_header">Social Impact</h4>
+                        <div class="footer_above_item_text">People</div>
+                        <div class="footer_above_item_text">Planet</div>
+                        <div class="footer_above_item_text">Environmental and Social Impact Reporting</div>
+                    </div>
+                    <div id="footer_above_item">
+                        <h4 id="footer_above_item_header">For Business Partners</h4>
+                        <div class="footer_above_item_text">Landlord Support Center</div>
+                        <div class="footer_above_item_text">Suppliers</div>
+                        <div class="footer_above_item_text">Corporate Gift Card Sales</div>
+                        <div class="footer_above_item_text">Office and Foodservice Coffee</div>
+                    </div>
+                </div>
+                <div id="footer_below">
+                    <div id="footer_below_left">
+                        <img src="../images/img(giftcard)/spotify.png" alt="">
+                        <img src="../images/img(giftcard)/fb.png" alt="">
+                        <img src="../images/img(giftcard)/pinterest.png" alt="">
+                        <img src="../images/img(giftcard)/twitter.png" alt="">
+                        <img src="../images/img(giftcard)/youtube.png" alt="">
+                    </div>
+                    <div id="footer_below_right">© 2023 Starbucks Coffee Company. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery  -->
     <script src="../js/jquery-3.5.1.min.js"></script>
     <!-- bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
@@ -612,12 +665,12 @@
     <!-- custom js  -->
     <script src="../js/main.js"></script>
 
-    <script  src="../js/menu.js">  </script>
+    <script src="../js/menu.js">  </script>
 
     <script>
         // Call the readerProduct function to generate the product list
         readerProduct();
-      </script>
+    </script>
     </body>
 
 </html>
