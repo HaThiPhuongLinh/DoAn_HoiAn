@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #wrapper {
+            font-family: 'Montserrat';
+        }
+
+        #header {
+            /* display: flex;
+            align-items: center;
+            height: 55px;
+            margin-top: 35px;
+            margin-left: 30px; */
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: rgb(255 255 255 / 80%);
+            backdrop-filter: blur(20px);
+
+        }
+
+        #header_left {
+            display: flex;
+            width: 18%;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .logo {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        #header_center {
+            display: flex;
+            margin-left: 100px;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            font-weight: bold;
+            color: #574747;
+            font-size: 18px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a{
+            color: #574747;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+            padding: 11px;
+        }
+
+        a:hover {
+            color: #3A8869;
+            box-shadow: 0 4px #3A8869;
+            font-weight: bold;
+        }
+
+        #header_right {
+            display: flex;
+            align-items: center;
+            margin-left: 120px;
+        }
+
+        .input {
+            border-radius: 50px;
+            background-color: white;
+            border: none;
+            width: 220px;
+            height: 35px;
+            color: rgb(150, 150, 150);
+            font-size: 15px;
+            padding-left: 50px;
+            box-shadow: 3px 3px 0px 0px gainsboro;
+        }
+
+        .search_img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -200px;
+        }
+
+        .cart_img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 220px;
+        }
+
+
+        img {
+            max-width: 100%;
+        }
+
+        #footer{
+            margin: 10px 75px 0 110px;
+        }
+        #footer_above{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+        #footer_above_item{
+            width: 185px;
+        }
+        #footer_above_item_header{
+            padding-bottom: 10px;
+        }
+        .footer_above_item_text{
+            padding-bottom: 30px;
+            color: gray;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        #footer_below{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #footer_below_left{
+            display: flex;
+            align-items: center;
+            width: 210px;
+            justify-content: space-between;
+        }
+        #footer_below_right{
+            font-size: 12.5px;
+            width: 370px;
+            font-weight: 700;
+            margin-right: 25px;
+        }
+    </style>
+</head>
+<div id="wrapper">
+    <div id="header">
+        <div id="header_left" onclick="window.location.href='../html/home.html'">
+            <img src="../images/img(home)/logo.png" alt="" style="height: 80px; margin-top: 7px;margin-bottom: 7px;">
+            <div class="logo"><b>STARBUCKS</b></div>
+        </div>
+        <div id="header_center">
+            <li><a href="../html/trending.html">Trending</a></li>
+            <li><a href="../html/menu.html">Menu</a></li>
+            <li><a href="../html/gifdcard.html">Gift Cards</a></li>
+            <li><a href="#">Reserve</a></li>
+            <li><a href="#">Delivery</a></li>
+        </div>
+        <div id="header_right">
+            <input class="input" type="text" placeholder="Search">
+            <img src="../images/img(home)/Search.png" alt="" class="search_img">
+            <img class="cart_img" src="../images/img(home)/Cart.png" alt="">
+        </div>
+    </div>
+    
+    
+    </body>
+
+</html>
