@@ -14,6 +14,7 @@
         #wrapper {
             font-family: 'Montserrat';
         }
+
         img {
             transition: transform 0.2s, box-shadow 0.2s;
         }
@@ -21,6 +22,7 @@
         img:hover {
             transform: scale(1.05);
         }
+
         #header {
             display: flex;
             position: fixed;
@@ -46,7 +48,7 @@
             font-size: 20px;
         }
 
-        #header_center{
+        #header_center {
             display: flex;
             margin-left: 100px;
             justify-content: space-between;
@@ -61,7 +63,7 @@
             list-style-type: none;
         }
 
-        a{
+        a {
             color: #574747;
         }
 
@@ -82,6 +84,7 @@
             align-items: center;
             margin-left: 120px;
         }
+
         .input {
             border-radius: 50px;
             background-color: white;
@@ -94,17 +97,18 @@
             box-shadow: 3px 3px 0px 0px gainsboro;
         }
 
-        .search_img{
+        .search_img {
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -200px;
         }
 
-        .cart_img{
+        .cart_img {
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: 220px;
         }
+
         #center2 {}
 
         #container1 {
@@ -254,7 +258,7 @@
         }
 
         #footer {
-            margin: 10px 75px 0 130px;
+            margin: 20px 75px 0 145px;
         }
 
         #footer_above {
@@ -298,7 +302,6 @@
             font-weight: 700;
             margin-right: 25px;
         }
-        
     </style>
 </head>
 
@@ -306,7 +309,8 @@
     <div id="wrapper">
         <div id="header">
             <div id="header_left" onclick="window.location.href='../html/home.html'">
-                <img src="../images/img(giftcard)/logo.png" alt="" style="height: 80px; margin-top: 7px;margin-bottom: 7px;">
+                <img src="../images/img(giftcard)/logo.png" alt=""
+                    style="height: 80px; margin-top: 7px;margin-bottom: 7px;">
                 <div class="logo"><b>STARBUCKS</b></div>
             </div>
             <div id="header_center">
@@ -322,215 +326,242 @@
                 <img class="cart_img" src="../images/img(giftcard)/Cart.png" alt="">
             </div>
         </div>
-        <div id="center2">
-            <div id="container1">
-                <div id="container_first">
-                    <div id="left_container1">
-                        <div class="title">Caramel Frappuccino</div>
-                        <div style="display: flex; align-items: center; margin-top: 30px;">
-                            <img src="../images/img(trending)/Rating.png" alt="" width="17%">
-                            <div class="d39">$ 39.00</div>
-                        </div>
-                        <div style="margin-top: 20px;margin-bottom: 40px; line-height: 30px;">
-                            Caramel Frappuccino meets coffee, milk and ice for a rendezvous in<br>
-                            the blender, while whipped cream and buttery caramel sauce<br>
-                            layer the love on top. To change things up, try it affogato-style<br>
-                            with a hot espresso shot poured right over the top.
-                        </div>
-                        <div style="font-size: 18px;"><b>Serve with</b></div>
-                        <div style="display: flex; margin-top: 20px; margin-left: 20px;">
-                            <div class="circle">
-                                <img src="../images/img(trending)/cookies.png" alt="">
+        <div id="viewport">
+            <div id="js-scroll-content">
+                <div id="center2">
+                    <div id="container1">
+                        <div id="container_first">
+                            <div id="left_container1">
+                                <div class="title">Caramel Frappuccino</div>
+                                <div style="display: flex; align-items: center; margin-top: 30px;">
+                                    <img src="../images/img(trending)/Rating.png" alt="" width="17%">
+                                    <div class="d39">$ 39.00</div>
+                                </div>
+                                <div style="margin-top: 20px;margin-bottom: 40px; line-height: 30px;">
+                                    Caramel Frappuccino meets coffee, milk and ice for a rendezvous in<br>
+                                    the blender, while whipped cream and buttery caramel sauce<br>
+                                    layer the love on top. To change things up, try it affogato-style<br>
+                                    with a hot espresso shot poured right over the top.
+                                </div>
+                                <div style="font-size: 18px;"><b>Serve with</b></div>
+                                <div style="display: flex; margin-top: 20px; margin-left: 20px;">
+                                    <div class="circle">
+                                        <img src="../images/img(trending)/cookies.png" alt="">
+                                    </div>
+                                    <div class="circle">
+                                        <img src="../images/img(trending)/cups.png" alt="">
+                                    </div>
+                                    <div class="circle">
+                                        <img src="../images/img(trending)/donut.png" alt="">
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-top: 20px; margin-left: 15px;">
+                                    <div>COOKIES</div>
+                                    <div style="margin-left: 65px; margin-right: 70px;">YOGURT</div>
+                                    <div>DONUT</div>
+                                </div>
+                                <div style="display: flex; margin-top: 30px; align-items: center;">
+                                    <button class="box_qt">-</button>
+                                    <div style="font-size: 20px; margin-left: 20px;">2</div>
+                                    <button class="box_qt">+</button>
+                                    <button id="addtocard">ADD TO CARD</button>
+                                </div>
                             </div>
-                            <div class="circle">
-                                <img src="../images/img(trending)/cups.png" alt="">
+                            <div id="center_container1">
+                                <img src="../images/img(trending)/circle_caramel.png" alt="" class="circle_caramel">
+                                <img src="../images/img(trending)/caramel.png" alt=""
+                                    style="margin-left: -460px; margin-top: -80px;" width="495px" height="495px">
                             </div>
-                            <div class="circle">
-                                <img src="../images/img(trending)/donut.png" alt="">
-                            </div>
-                        </div>
-                        <div style="display: flex; margin-top: 20px; margin-left: 15px;">
-                            <div>COOKIES</div>
-                            <div style="margin-left: 65px; margin-right: 70px;">YOGURT</div>
-                            <div>DONUT</div>
-                        </div>
-                        <div style="display: flex; margin-top: 30px; align-items: center;">
-                            <button class="box_qt">-</button>
-                            <div style="font-size: 20px; margin-left: 20px;">2</div>
-                            <button class="box_qt">+</button>
-                            <button id="addtocard">ADD TO CARD</button>
-                        </div>
-                    </div>
-                    <div id="center_container1">
-                        <img src="../images/img(trending)/circle_caramel.png" alt="" class="circle_caramel">
-                        <img src="../images/img(trending)/caramel.png" alt="" style="margin-left: -460px; margin-top: -80px;" width="495px"
-                            height="495px">
-                    </div>
-                    <div id="right_container1">
-                        <div style="display: flex;">
-                            <img src="../images/img(trending)/circle_ribbon.png" alt="" class="circle_ribbon">
-                            <img src="../images/img(trending)/ribbon.png" alt="" width="186px" height="189px"
-                                style="margin-left: -188px; margin-top: -10px;">
-                            <div class="rating">
-                                5.0
-                                <img src="../images/img(trending)/Vector.png" alt="" style="margin-left: 5px;">
-                            </div>
-                        </div>
-                        <div style="display: flex; margin-top: 50px">
-                            <img src="../images/img(trending)/circle_unicorn.png" alt="" class="circle_ribbon">
-                            <img src="../images/img(trending)/unicorn.png" alt="" width="205px" height="195px"
-                                style="margin-left: -192px; margin-top: -20px;">
-                            <div class="rating" style="margin-left: -95px;">
-                                4.5
-                                <img src="../images/img(trending)/Vector.png" alt="" style="margin-left: 5px;">
+                            <div id="right_container1">
+                                <div style="display: flex;">
+                                    <img src="../images/img(trending)/circle_ribbon.png" alt="" class="circle_ribbon">
+                                    <img src="../images/img(trending)/ribbon.png" alt="" width="186px" height="189px"
+                                        style="margin-left: -188px; margin-top: -10px;">
+                                    <div class="rating">
+                                        5.0
+                                        <img src="../images/img(trending)/Vector.png" alt="" style="margin-left: 5px;">
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-top: 50px">
+                                    <img src="../images/img(trending)/circle_unicorn.png" alt="" class="circle_ribbon">
+                                    <img src="../images/img(trending)/unicorn.png" alt="" width="205px" height="195px"
+                                        style="margin-left: -192px; margin-top: -20px;">
+                                    <div class="rating" style="margin-left: -95px;">
+                                        4.5
+                                        <img src="../images/img(trending)/Vector.png" alt="" style="margin-left: 5px;">
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-top: 50px">
+                                    <img src="../images/img(trending)/circle_strawberry.png" alt=""
+                                        class="circle_ribbon">
+                                    <img src="../images/img(trending)/strawberry.png" alt="" width="150px"
+                                        height="170px" style="margin-left: -170px; margin-top: 10px;">
+                                    <div class="rating" style="margin-left: -60px;">
+                                        5.0
+                                        <img src="../images/img(trending)/Vector.png" alt="" style="margin-left: 5px;">
+                                    </div>
+                                    <img src="../images/img(trending)/pngwing 8 1.png" alt="" class="hide">
+                                </div>
                             </div>
                         </div>
-                        <div style="display: flex; margin-top: 50px">
-                            <img src="../images/img(trending)/circle_strawberry.png" alt="" class="circle_ribbon">
-                            <img src="../images/img(trending)/strawberry.png" alt="" width="150px" height="170px"
-                                style="margin-left: -170px; margin-top: 10px;">
-                            <div class="rating" style="margin-left: -60px;">
-                                5.0
-                                <img src="../images/img(trending)/Vector.png" alt="" style="margin-left: 5px;">
+                    </div>
+                    <div id="container_second">
+                        <div id="p1">
+                            <img src="../images/img(trending)/fantasy.png" alt=""
+                                style="margin-left: 60px; margin-top: -80px;">
+                            <div style="font-size: 20px; display: flex; justify-content: center;"><b>Fantasy Tail
+                                    Frappucino</b></div>
+                            <div
+                                style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                                <div>Calories</div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                                    <div>Total Fat 19g</div>
+                                    <div>29%</div>
+                                </div>
+                                <div style="margin-top: 30px;">Saturated Fat 13g</div>
+                                <div style="margin-top: 30px;">Trans Fat 0.5g</div>
                             </div>
-                            <img src="../images/img(trending)/pngwing 8 1.png" alt="" class="hide">
+                        </div>
+                        <div id="p1">
+                            <img src="../images/img(trending)/mermaid.png" alt=""
+                                style="margin-left: 40px; margin-top: -100px;">
+                            <div style="font-size: 20px; display: flex; justify-content: center; margin-top: 25px;">
+                                <b>Mermaid Frappuccino</b></div>
+                            <div
+                                style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                                <div>Calories</div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                                    <div>Total Fat 18g</div>
+                                    <div>29%</div>
+                                </div>
+                                <div style="margin-top: 30px;">Saturated Fat 11g</div>
+                                <div style="margin-top: 30px;">Trans Fat 0.52g</div>
+                            </div>
+                        </div>
+                        <div id="p1">
+                            <img src="../images/img(trending)/iced.png" alt=""
+                                style="margin-left: 60px; margin-top: -120px;">
+                            <div style="font-size: 20px; display: flex; justify-content: center;"><b>Iced Coffee</b>
+                            </div>
+                            <div
+                                style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                                <div>Calories</div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                                    <div>Total Fat 19g</div>
+                                    <div>8%</div>
+                                </div>
+                                <div style="margin-top: 30px;">Saturated Fat 3g</div>
+                                <div style="margin-top: 30px;">Trans Fat 0.1g</div>
+                            </div>
+                        </div>
+                        <div id="p1">
+                            <img src="../images/img(trending)/creme.png" alt=""
+                                style="margin-left: 80px; margin-top: -100px;">
+                            <div style="font-size: 20px; display: flex; justify-content: center; margin-top: 20px;">
+                                <b>Crème Frappuccino</b></div>
+                            <div
+                                style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
+                                <div>Calories</div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                                    <div>Total Fat 19g</div>
+                                    <div>23%</div>
+                                </div>
+                                <div style="margin-top: 30px;">Saturated Fat 10g</div>
+                                <div style="margin-top: 30px;">Trans Fat 0.4g</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div id="container_second">
-                <div id="p1">
-                    <img src="../images/img(trending)/fantasy.png" alt="" style="margin-left: 60px; margin-top: -80px;">
-                    <div style="font-size: 20px; display: flex; justify-content: center;"><b>Fantasy Tail Frappucino</b></div>
-                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
-                        <div>Calories</div>
-                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
-                            <div>Total Fat 19g</div>  
-                            <div>29%</div> 
+                    <div id="container_third">
+                        <div style="margin-left: 60px;  margin-right: 40px;">
+                            <img src="../images/img(trending)/breakfast.png" alt="">
+                            <div style="margin-left: 50px; font-size: 18px;"><b>Breakfast 1</b></div>
                         </div>
-                        <div style="margin-top: 30px;">Saturated Fat 13g</div>
-                        <div style="margin-top: 30px;">Trans Fat 0.5g</div>
-                    </div>
-                </div>
-                <div id="p1">
-                    <img src="../images/img(trending)/mermaid.png" alt="" style="margin-left: 40px; margin-top: -100px;">
-                    <div style="font-size: 20px; display: flex; justify-content: center; margin-top: 25px;"><b>Mermaid Frappuccino</b></div>
-                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
-                        <div>Calories</div>
-                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
-                            <div>Total Fat 18g</div>  
-                            <div>29%</div> 
+                        <div style="margin-left: 60px;  margin-right: 30px;">
+                            <img src="../images/img(trending)/sandwich.png" alt="">
+                            <div style="margin-left: 70px; font-size: 18px;"><b>Sandwich</b></div>
                         </div>
-                        <div style="margin-top: 30px;">Saturated Fat 11g</div>
-                        <div style="margin-top: 30px;">Trans Fat 0.52g</div>
-                    </div>
-                </div>
-                <div id="p1">
-                    <img src="../images/img(trending)/iced.png" alt="" style="margin-left: 60px; margin-top: -120px;">
-                    <div style="font-size: 20px; display: flex; justify-content: center;"><b>Iced Coffee</b></div>
-                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
-                        <div>Calories</div>
-                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
-                            <div>Total Fat 19g</div>  
-                            <div>8%</div> 
+                        <div style="margin-left: 60px;  margin-right: 40px;">
+                            <img src="../images/img(trending)/wrap.png" alt="">
+                            <div style="margin-left: 60px; font-size: 18px;"><b>Breakfast Wrap</b></div>
                         </div>
-                        <div style="margin-top: 30px;">Saturated Fat 3g</div>
-                        <div style="margin-top: 30px;">Trans Fat 0.1g</div>
-                    </div>
-                </div>
-                <div id="p1">
-                    <img src="../images/img(trending)/creme.png" alt="" style="margin-left: 80px; margin-top: -100px;">
-                    <div style="font-size: 20px; display: flex; justify-content: center; margin-top: 20px;"><b>Crème Frappuccino</b></div>
-                    <div style="margin-left: 60px; margin-top:10px; margin-right: 80px; color: #574747; font-weight: bold;">
-                        <div>Calories</div>
-                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
-                            <div>Total Fat 19g</div>  
-                            <div>23%</div> 
+                        <div style="margin-left: 60px; margin-right: 40px;">
+                            <img src="../images/img(trending)/turkey.png" alt="">
+                            <div style="margin-left: 45px; font-size: 18px;"><b>Turkey Bacon</b></div>
                         </div>
-                        <div style="margin-top: 30px;">Saturated Fat 10g</div>
-                        <div style="margin-top: 30px;">Trans Fat 0.4g</div>
                     </div>
-                </div>
-            </div>
-            <div id="container_third">
-                <div style="margin-left: 60px;  margin-right: 40px;">
-                    <img src="../images/img(trending)/breakfast.png" alt="">
-                    <div style="margin-left: 50px; font-size: 18px;"><b>Breakfast 1</b></div>
-                </div>
-                <div style="margin-left: 60px;  margin-right: 30px;">
-                    <img src="../images/img(trending)/sandwich.png" alt="">
-                    <div style="margin-left: 70px; font-size: 18px;"><b>Sandwich</b></div>
-                </div>
-                <div style="margin-left: 60px;  margin-right: 40px;">
-                    <img src="../images/img(trending)/wrap.png" alt="">
-                    <div style="margin-left: 60px; font-size: 18px;"><b>Breakfast Wrap</b></div>
-                </div>
-                <div style="margin-left: 60px; margin-right: 40px;">
-                    <img src="../images/img(trending)/turkey.png" alt="">
-                    <div style="margin-left: 45px; font-size: 18px;"><b>Turkey Bacon</b></div>
-                </div>
-            </div>
-            <div id="container_fourth">
-                <div style="margin-left: 70px; margin-right: 40px;">
-                    <img src="../images/img(trending)/b1.png" alt="">
-                    <div style="margin-left: -10px;font-size: 18px;"><b>Eggs & Cheddar Protein Box</b></div>
-                </div>
-                <div style="margin-left: 160px;  margin-right: 30px;">
-                    <img src="../images/img(trending)/b2.png" alt="">
-                    <div style="margin-left: -10px; font-size: 18px;"><b>Cheese & Fruit Protein Box</b></div>
-                </div>
-                <div style="margin-left: 160px;  margin-right: 40px;">
-                    <img src="../images/img(trending)/b3.png" alt="">
-                    <div style="margin-left: 20px; font-size: 18px;"><b>PB&J Protein Box</b></div>
-                </div>
-            </div>
-            <div id="footer">
-                <div id="footer_above">
-                    <div id="footer_above_item">
-                        <h4>About Us</h4>
-                        <div class="footer_above_item_text">Our Company</div>
-                        <div class="footer_above_item_text">Our Coffee</div>
-                        <div class="footer_above_item_text">Stories and News</div>
-                        <div class="footer_above_item_text">Starbucks Archive</div>
-                        <div class="footer_above_item_text">Investor Relations</div>
-                        <div class="footer_above_item_text">Customer Service</div>
+                    <div id="container_fourth">
+                        <div style="margin-left: 70px; margin-right: 40px;">
+                            <img src="../images/img(trending)/b1.png" alt="">
+                            <div style="margin-left: -10px;font-size: 18px;"><b>Eggs & Cheddar Protein Box</b></div>
+                        </div>
+                        <div style="margin-left: 160px;  margin-right: 30px;">
+                            <img src="../images/img(trending)/b2.png" alt="">
+                            <div style="margin-left: -10px; font-size: 18px;"><b>Cheese & Fruit Protein Box</b></div>
+                        </div>
+                        <div style="margin-left: 160px;  margin-right: 40px;">
+                            <img src="../images/img(trending)/b3.png" alt="">
+                            <div style="margin-left: 20px; font-size: 18px;"><b>PB&J Protein Box</b></div>
+                        </div>
                     </div>
-                    <div id="footer_above_item">
-                        <h4>Careers</h4>
-                        <div class="footer_above_item_text">Culture and Values</div>
-                        <div class="footer_above_item_text">Inclusion, Diversity, and Equity</div>
-                        <div class="footer_above_item_text">College Achievement Plan</div>
-                        <div class="footer_above_item_text">Alumni Community</div>
-                        <div class="footer_above_item_text">U.S.Careers</div>
-                        <div class="footer_above_item_text">International Careers</div>
+                    <div id="footer">
+                        <div id="footer_above">
+                            <div id="footer_above_item">
+                                <h4>About Us</h4>
+                                <div class="footer_above_item_text">Our Company</div>
+                                <div class="footer_above_item_text">Our Coffee</div>
+                                <div class="footer_above_item_text">Stories and News</div>
+                                <div class="footer_above_item_text">Starbucks Archive</div>
+                                <div class="footer_above_item_text">Investor Relations</div>
+                                <div class="footer_above_item_text">Customer Service</div>
+                            </div>
+                            <div id="footer_above_item">
+                                <h4>Careers</h4>
+                                <div class="footer_above_item_text">Culture and Values</div>
+                                <div class="footer_above_item_text">Inclusion, Diversity, and Equity</div>
+                                <div class="footer_above_item_text">College Achievement Plan</div>
+                                <div class="footer_above_item_text">Alumni Community</div>
+                                <div class="footer_above_item_text">U.S.Careers</div>
+                                <div class="footer_above_item_text">International Careers</div>
+                            </div>
+                            <div id="footer_above_item">
+                                <h4>Social Impact</h4>
+                                <div class="footer_above_item_text">People</div>
+                                <div class="footer_above_item_text">Planet</div>
+                                <div class="footer_above_item_text">Environmental and Social Impact Reporting</div>
+                            </div>
+                            <div id="footer_above_item">
+                                <h4>For Business Partners</h4>
+                                <div class="footer_above_item_text">Landlord Support Center</div>
+                                <div class="footer_above_item_text">Suppliers</div>
+                                <div class="footer_above_item_text">Corporate Gift Card Sales</div>
+                                <div class="footer_above_item_text">Office and Foodservice Coffee</div>
+                            </div>
+                        </div>
+                        <div id="footer_below">
+                            <div id="footer_below_left">
+                                <img src="../images/img(home)/spotify.png" alt="">
+                                <img src="../images/img(home)/fb.png" alt="">
+                                <img src="../images/img(home)/pinterest.png" alt="">
+                                <img src="../images/img(home)/twitter.png" alt="">
+                                <img src="../images/img(home)/youtube.png" alt="">
+                            </div>
+                            <div id="footer_below_right">© 2023 Starbucks Coffee Company. All rights reserved.</div>
+                        </div>
                     </div>
-                    <div id="footer_above_item">
-                        <h4>Social Impact</h4>
-                        <div class="footer_above_item_text">People</div>
-                        <div class="footer_above_item_text">Planet</div>
-                        <div class="footer_above_item_text">Environmental and Social Impact Reporting</div>
-                    </div>
-                    <div id="footer_above_item">
-                        <h4>For Business Partners</h4>
-                        <div class="footer_above_item_text">Landlord Support Center</div>
-                        <div class="footer_above_item_text">Suppliers</div>
-                        <div class="footer_above_item_text">Corporate Gift Card Sales</div>
-                        <div class="footer_above_item_text">Office and Foodservice Coffee</div>
-                    </div>
-                </div>
-                <div id="footer_below">
-                    <div id="footer_below_left">
-                        <img src="../images/img(home)/spotify.png" alt="">
-                        <img src="../images/img(home)/fb.png" alt="">
-                        <img src="../images/img(home)/pinterest.png" alt="">
-                        <img src="../images/img(home)/twitter.png" alt="">
-                        <img src="../images/img(home)/youtube.png" alt="">
-                    </div>
-                    <div id="footer_below_right">© 2023 Starbucks Coffee Company. All rights reserved.</div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/jquery.mixitup.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js">  </script>
+
 </body>
 
 </html>
